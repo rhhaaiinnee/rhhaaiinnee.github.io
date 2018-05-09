@@ -60,12 +60,12 @@ header .overlay {
   opacity: 0;
   visibility: hidden;
   transition: opacity .35s, visibility .35s, height .35s;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 99; }
 header .overlay.open {
   opacity: 1;
   visibility: visible;
-  height: 100%;
-  z-index: 99; }
+  height: 100%; }
   header .overlay.open li {
     animation: fadeInRight .5s ease forwards;
     animation-delay: .35s; }
