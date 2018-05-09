@@ -11,98 +11,139 @@ body {
   position: relative;
 }
 header{
-  .headerNav{
-    position: absolute;
+  .button_container {
+    position: fixed;
+    top: 5%;
     right: 2%;
-    top: 4%;
+    height: 27px;
+    width: 65px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+  }
+  .button_container:hover {
+    opacity: .7;
+  }
+  .button_container.active  {
+    .top{
+      transform: translateY(11px) translateX(0) rotate(45deg);
+      background: #0ccbcb;
+    }
+    .middle {
+      opacity: 0;
+      background: #0ccbcb;
+    }
+    .bottom {
+      transform: translateY(-11px) translateX(0) rotate(-45deg);
+      background: #0ccbcb;
+      top: 23px;
+    }
+  }
+  .button_container span {
+    background: #fff;
+    border: none;
+    border-radius: 15px;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .35s ease;
+    cursor: pointer;
+  }
+  .button_container span:nth-of-type(2) {
+    top: 20px;
+  }
+  .button_container span:nth-of-type(3) {
+    top: 40px;
+  }
+  .overlay {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+  }
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
     z-index: 99;
-    .menu{
-      background: none;
-      border: none;
+    li {
+      animation: fadeInRight .5s ease forwards;
+      animation-delay: .35s;
     }
-    .menu:focus{
-      outline: 0;
+    li:nth-of-type(2) {
+      animation-delay: .4s;
     }
-    .menu i{
-      font-size: 50px;
-      color: #fff;
+    li:nth-of-type(3) {
+      animation-delay: .45s;
     }
-    .menuOpen{
-      content: '';
-      background: url('/images/menu_close.png');
+    li:nth-of-type(4) {
+      animation-delay: .50s;
+    }
+  }
+  .overlay nav {
+    position: relative;
+    /*height: 70%;*/
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 54px;
+    font-family: 'MonkyBasic';
+    text-align: center;
+  }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    li {
       display: block;
-      width: 66px;
-      height: 48px;
-    }
-    .menuClose{
-      content: '';
-      background: url(/images/menu_open.png);
-      display: block;
-      width: 49px;
-      height: 49px;
-      position: absolute;
-      right: 2%;
-      top: 4%;
-    }
-    .overlay {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: #fff;
-      z-index: 99;
-      nav {
-        font-family: 'MonkyBasic';
-        text-align: center;
+      height: 25%;
+      height: calc(100% / 4);
+      min-height: 50px;
+      position: relative;
+      opacity: 0;
+      a {
+        display: block;
         position: relative;
-        top: 50%;
-        height: 60%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 auto;
-        display: inline-block;
-        height: 100%;
-        position: relative;
-        li {
-          display: block;
-          height: 20%;
-          height: calc(100% / 5);
-          min-height: 54px;
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-          a {
-            font-size: 54px;
-            font-weight: 300;
-            display: block;
-            color: #fff;
-            -webkit-transition: color 0.2s;
-            transition: color 0.2s;
-            color: #0ccbcb;
-          }
-        }
-      }
-    }
-    .overlay-slidedown {
-      visibility: hidden;
-      -webkit-transform: translateY(-100%);
-      transform: translateY(-100%);
-      -webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
-      transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
-    }
-    .overlay-slidedown.open {
-      visibility: visible;
-      -webkit-transform: translateY(0%);
-      transform: translateY(0%);
-      -webkit-transition: -webkit-transform 0.4s ease-in-out;
-      transition: transform 0.4s ease-in-out;
-      .menu i {
         color: #0ccbcb;
+        text-decoration: none;
+        overflow: hidden;
       }
+    }
+  }
+  .overlay ul li a:hover:after,
+  .overlay ul li a:focus:after,
+  .overlay ul li a:active:after {
+    width: 100%;
+  }
+  .overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    transition: .35s;
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
     }
   }
 }
