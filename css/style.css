@@ -102,7 +102,10 @@ header .overlay ul {
       position: relative;
       color: #0ccbcb;
       text-decoration: none;
-      overflow: hidden; }
+      overflow: hidden;
+      padding: 20px; }
+    header .overlay ul li a:hover {
+      text-decoration: underline; }
 header .overlay ul li a:hover:after,
 header .overlay ul li a:focus:after,
 header .overlay ul li a:active:after {
