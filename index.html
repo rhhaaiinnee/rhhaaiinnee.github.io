@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/plugin.css">
     <!-- CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
@@ -16,19 +17,21 @@
   </head>
   <body>
     <header>
-      <button type="button" id="trigger-overlay" class="menu menuOpen"></button>
-      <div class="overlay overlay-slidedown">
-        <button type="button" class="overlay-close menu menuClose"></button>
-        <nav>
-          <ul>
-            <li><a href="#index">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+     <div class="headerNav">
+       <button type="button" id="trigger-overlay" class="menu menuOpen"></button>
+       <div class="overlay overlay-slidedown">
+         <button type="button" class="overlay-close menu menuClose"></button>
+         <nav>
+           <ul>
+             <li><a href="#index">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#works">Works</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#contact">Contact</a></li>
+           </ul>
+         </nav>
+       </div>
+     </div>
     </header>
     <main class="slideview">
       <section class="slideview-content">
@@ -47,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div id="about" class="slide slide-2">
+        <!--<div id="about" class="slide slide-2">
           <div class="container">
               <div class="row">
                 <div class="col-md-6">
@@ -101,7 +104,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </section>
       <a class="slideview-button slideview-prev" aria-label="Previous"></a>
       <a class="slideview-button slideview-next" aria-label="Next"></a>
