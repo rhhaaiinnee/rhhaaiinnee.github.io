@@ -280,7 +280,7 @@ background: lightgray; }
 
 .dummy-img,
 .dummy-text {
-  max-width: 600px;
+  max-width: 950px;
   width: 90%;
   opacity: 0;
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
@@ -327,9 +327,12 @@ p.dummy-text:nth-child(3) {
 }
 
 .dummy-img {
-  height: 400px;
+ /* height: 400px;*/
   background-color: #ddd;
   margin: 30px auto;
+}
+.dummy-img img{
+  width: 100%;
 }
 
 .dummy-text {
