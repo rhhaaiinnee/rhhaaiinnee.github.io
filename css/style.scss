@@ -170,27 +170,52 @@ header{
 }
 main{
   .container{
-    width: 1320px;
-    margin: 0 auto;
     padding: 100px;
   }
   .row h2{
     font-family: 'MonkyBasic';
+    color: #fff;
   }
   .row .desc{
     font-size: 24px;/*
     font-style: italic;*/
     font-weight: 600;
+    color: #fff;
   }
   .row p:not(desc){
     font-size: 20px;
     font-weight: 300;
+    color: #fff;
+  }
+  .slides{
+    zoom: 1!important;
+  }
+  .navigate-left{
+    content: '';
+    background: url(/images/arrow_prev.png)no-repeat;
+    width: 53px;
+    height: 17px;
+    bottom: 7%!important;
+    right: 5%!important;
+  }
+  .navigate-right{
+    content: '';
+    background: url(/images/arrow_next.png);
+    width: 53px;
+    height: 17px;
+    bottom: 4%!important;
+    right: 2%!important;
+  }
+  .controls-arrow:before,
+  .controls-arrow:after{
+    display: none;
   }
 }
 footer{
   position: absolute;
   bottom: 4%;
   left: 2%;
+  z-index: 9;
   a{
     display: block;
     width: 40px;
@@ -260,7 +285,7 @@ footer{
         -webkit-border-radius: 50px;
         border-radius: 50px;
         position: relative;
-        span{
+        i{
           position: absolute;
           left: 50%;
           top: 50%;
@@ -296,6 +321,13 @@ footer{
     margin: 20px 0;
   }
 }
+/* ------ skills page ------ */
+
+
+
+
+
+/* ------ contact page ------ */
 
 @media screen and (max-height: 30.5em) {
   .overlay nav {

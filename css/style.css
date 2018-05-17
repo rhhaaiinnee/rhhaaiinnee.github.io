@@ -138,24 +138,45 @@ header .overlay ul li a:after {
     opacity: 1;
     left: 0; } }
 main .container {
-  width: 1320px;
-  margin: 0 auto;
   padding: 100px; }
 main .row h2 {
-  font-family: 'MonkyBasic'; }
+  font-family: 'MonkyBasic';
+  color: #fff; }
 main .row .desc {
   font-size: 24px;
                 /*
 font-style: italic;*/
-  font-weight: 600; }
+  font-weight: 600;
+  color: #fff; }
 main .row p:not(desc) {
   font-size: 20px;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #fff; }
+main .slides {
+  zoom: 1 !important; }
+main .navigate-left {
+  content: '';
+  background: url(/images/arrow_prev.png) no-repeat;
+  width: 53px;
+  height: 17px;
+  bottom: 7% !important;
+  right: 5% !important; }
+main .navigate-right {
+  content: '';
+  background: url(/images/arrow_next.png);
+  width: 53px;
+  height: 17px;
+  bottom: 4% !important;
+  right: 2% !important; }
+main .controls-arrow:before,
+main .controls-arrow:after {
+  display: none; }
 
 footer {
   position: absolute;
   bottom: 4%;
-  left: 2%; }
+  left: 2%;
+  z-index: 9; }
   footer a {
     display: block;
     width: 40px;
@@ -217,7 +238,7 @@ footer {
         -webkit-border-radius: 50px;
         border-radius: 50px;
         position: relative; }
-        #index .socials li a span {
+        #index .socials li a i {
           position: absolute;
           left: 50%;
           top: 50%;
@@ -242,6 +263,8 @@ footer {
   #works .gallery {
     margin: 20px 0; }
 
+/* ------ skills page ------ */
+/* ------ contact page ------ */
 @media screen and (max-height: 30.5em) {
   .overlay nav {
     height: 70%;

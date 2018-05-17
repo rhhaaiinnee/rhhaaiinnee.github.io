@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/plugin.css">
+    <link rel="stylesheet" href="/css/reveal.css">
     <!-- CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
@@ -24,49 +25,49 @@
       </div>
       <div class="overlay" id="overlay">
         <nav class="overlay-menu">
-          <ul>
-            <li><a href="#index">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="slide-menu-items">
+            <li class="slide-menu-item"><a href="#index">Home</a></li>
+            <li class="slide-menu-item"><a href="#about">About</a></li>
+            <li class="slide-menu-item"><a href="#works">Works</a></li>
+            <li class="slide-menu-item"><a href="#skills">Skills</a></li>
+            <li class="slide-menu-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="slideview">
-      <section class="slideview-content">
-        <div id="index" class="slide slide-1">
+    <main class="reveal">
+      <div class="slides">
+        <section id="index" data-transition="slide" data-background="#0ccbcb">
           <div class="container">
             <h1>H<span class="ct01">!</span>,Im<span class="ct02">R</span>haine</h1>
             <p class="intro">"i just want to make beautiful things,<br>even if nobody cares" - Saul Bass</p>
             <div class="row justify-content-center align-items-center">
               <ul class="socials">
-                <li><a href="#"><span class="fab fa-behance"></span></a></li>
-                <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
-        </div>
-        <div id="about" class="slide slide-2">
+        </section>
+        <section id="about" data-transition="slide" data-background="#e9a1b9">
           <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <img src="/images/picture.png" alt="">
-                </div>
-                <div class="col-md-6 align-self-center">
-                  <h2>About Me</h2>
-                  <p class="desc">Lorem ipsum dolorsit amet, consectetur adipiscing elitsed</p>
-                  <p>Lorem ipsum dolorsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </div>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="/images/picture.png" alt="">
               </div>
+              <div class="col-md-6 align-self-center text-left">
+                <h2>About Me</h2>
+                <p class="desc">Lorem ipsum dolorsit amet, consectetur adipiscing elitsed</p>
+                <p>Lorem ipsum dolorsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div id="works" class="slide slide-3">
+        </section>
+        <section id="works" data-transition="slide" data-background="#ffc300">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -125,10 +126,28 @@
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <a class="slideview-button slideview-prev" aria-label="Previous"></a>
-      <a class="slideview-button slideview-next" aria-label="Next"></a>
+        </section>
+        <section id="skills" data-transition="slide" data-background="#c2d53f">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>TECHNICAL SKILLS</h2>
+                <p class="desc">Lorem ipsum dolorsit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" data-transition="slide" data-background="#333">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2>CONTACT ME</h2>
+                <p class="desc">Lorem ipsum dolorsit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <a href="#"><span class="fas fa-info"></span></a>
@@ -136,12 +155,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="/js/modernizr.custom.js"></script>
     <script src="/js/classie.js"></script>
-    <script src="/js/jquery.slideview.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/helper.js"></script>
     <script src="/js/grid3d.js"></script>
-    <script>
-      new grid3D( document.getElementById( 'grid3d' ) );
-    </script>
+    <script src="/js/reveal.js"></script>
   </body>
 </html>
