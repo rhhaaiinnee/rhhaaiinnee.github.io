@@ -200,7 +200,6 @@ footer {
 
 /* ------ index page ------ */
 #index {
-  background: #0ccbcb;
   font-family: 'MonkyBasic';
   text-align: center; }
   #index h1 {
@@ -249,19 +248,15 @@ footer {
           color: #0ccbcb; }
 
 /* ------ about page ------ */
-#about {
-  background: #e9a1b9; }
-  #about img {
-    width: 90%; }
+#about img {
+  width: 90%; }
 
 /* ------ works page ------ */
-#works {
-  background: #ffc300; }
-  #works h2,
-  #works .desc {
-    text-align: center; }
-  #works .gallery {
-    margin: 20px 0; }
+#works h2,
+#works .desc {
+  text-align: center; }
+#works .gallery {
+  margin: 20px 0; }
 
 /* ------ skills page ------ */
 /* ------ contact page ------ */

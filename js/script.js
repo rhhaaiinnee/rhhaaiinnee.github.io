@@ -3,16 +3,20 @@
 
 $(function() {
 
+
+
+  new grid3D( document.getElementById( 'grid3d' ) );
+
   Reveal.initialize({
     width: '100%',
     height: '100%',
     controls: true,
     progress: false,
     history: true,
-    transition: 'slide',
+     transition: 'slide',
+     transitionSpeed: 'default',
+     backgroundTransition: 'slide'
   });
-
-  new grid3D( document.getElementById( 'grid3d' ) );
 
   $('#toggle').click(function() {
     $(this).toggleClass('active');
