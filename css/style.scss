@@ -12,8 +12,11 @@ body {
   font-size: 20px;
   position: relative;
 }
+.noscroll #toggle {
+  pointer-events: none;
+}
 header{
- .overlay ul li a {
+  .overlay ul li a {
     transition: color .5s cubic-bezier(.57,.21,.69,1.25);
   }
   &.about  .overlay ul li a {
@@ -23,10 +26,22 @@ header{
     background: #e9a1b9;
   }
   &.works  .overlay ul li a {
-    color: #ffc300;
+    color: #ffb200;
   }
   &.works .button_container.active span{
-    background: #ffc300;
+    background: #ffb200;
+  }
+  &.skills  .overlay ul li a {
+    color: #C2D53F;
+  }
+  &.skills .button_container.active span{
+    background: #C2D53F;
+  }
+  &.contact  .overlay ul li a {
+    color: #333;
+  }
+  &.contact .button_container.active span{
+    background: #333;
   }
   .button_container {
     position: fixed;
@@ -210,6 +225,10 @@ main{
   .controls-arrow:after{
     display: none;
   }
+  .navigate-left.last-slide {
+    bottom: 4% !important;
+    right: 2% !important;
+  }
 }
 footer{
   position: absolute;
@@ -227,6 +246,7 @@ footer{
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    transition: background-color 0.5s ease;
     span{
       position: absolute;
       left: 50%;
@@ -234,15 +254,30 @@ footer{
       transform: translate(-50%,-50%);
     }
     &:hover{
-      transition: background-color 0.5s ease;
       background: #fff;
       color: #0ccbcb;
+    }
+    &.about:hover{
+      background: #fff;
+      color: #e9a1b9;
+    }
+    &.works:hover{
+      background: #fff;
+      color: #ffc300;
+    }
+    &.skills:hover{
+      background: #fff;
+      color: #C2D53F;
+    }
+    &.contact:hover{
+      background: #fff;
+      color: #333;
     }
   }
 }
 /* ------ index page ------ */
 #index{
-//  background: #0ccbcb;
+  //  background: #0ccbcb;
   font-family: 'MonkyBasic';
   text-align: center;
   h1{
@@ -300,19 +335,16 @@ footer{
     }
   }
 }
-
 /* ------ about page ------ */
-
 #about{
-//  background: #e9a1b9;
+  //  background: #e9a1b9;
   img{
     width: 90%;
   }
 }
-
 /* ------ works page ------ */
 #works{
-//  background: #ffc300;
+  //  background: #ffc300;
   h2,
   .desc{
     text-align: center;
@@ -322,10 +354,6 @@ footer{
   }
 }
 /* ------ skills page ------ */
-
-
-
-
 
 /* ------ contact page ------ */
 
