@@ -24,13 +24,13 @@ header.about .overlay ul li a {
 header.about .button_container.active span {
   background: #e9a1b9; }
 header.works .overlay ul li a {
-  color: #ffb200; }
+  color: #ffc300; }
 header.works .button_container.active span {
-  background: #ffb200; }
+  background: #ffc300; }
 header.skills .overlay ul li a {
-  color: #C2D53F; }
+  color: #b9cb40; }
 header.skills .button_container.active span {
-  background: #C2D53F; }
+  background: #b9cb40; }
 header.contact .overlay ul li a {
   color: #333; }
 header.contact .button_container.active span {
@@ -149,7 +149,7 @@ header .overlay ul li a:after {
     opacity: 1;
     left: 0; } }
 main .container {
-  padding: 100px; }
+  padding: 0 100px; }
 main .row h2 {
   font-family: 'MonkyBasic';
   color: #fff; }

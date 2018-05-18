@@ -10,7 +10,7 @@ $(function() {
     history: true,
     transition: 'slide',
     transitionSpeed: 'default',
-    backgroundTransition: 'slide'
+    backgroundTransition: 'fade'
   });
 
   $('#toggle').click(function() {

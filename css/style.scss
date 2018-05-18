@@ -1,6 +1,11 @@
 @font-face {font-family: 'MonkyBasic';src: url('/fonts/MonkyBasic.otf')}
 @font-face {font-family: 'RowoTypeface';src: url('/fonts/RowoTypeface.ttf')}
 
+$blue: #0ccbcb;
+$pink: #e9a1b9;
+$yellow: #ffc300;
+$green: #b9cb40;
+$black: #333;
 
 html,
 body {
@@ -20,28 +25,28 @@ header{
     transition: color .5s cubic-bezier(.57,.21,.69,1.25);
   }
   &.about  .overlay ul li a {
-    color: #e9a1b9;
+    color: $pink;
   }
   &.about .button_container.active span{
-    background: #e9a1b9;
+    background: $pink;
   }
   &.works  .overlay ul li a {
-    color: #ffb200;
+    color: $yellow;
   }
   &.works .button_container.active span{
-    background: #ffb200;
+    background: $yellow;
   }
   &.skills  .overlay ul li a {
-    color: #C2D53F;
+    color: $green;
   }
   &.skills .button_container.active span{
-    background: #C2D53F;
+    background: $green;
   }
   &.contact  .overlay ul li a {
-    color: #333;
+    color: $black;
   }
   &.contact .button_container.active span{
-    background: #333;
+    background: $black;
   }
   .button_container {
     position: fixed;
@@ -185,7 +190,7 @@ header{
 }
 main{
   .container{
-    padding: 100px;
+    padding: 0 100px;
   }
   .row h2{
     font-family: 'MonkyBasic';
