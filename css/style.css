@@ -126,7 +126,7 @@ header .overlay ul {
       overflow: hidden;
       padding: 20px; }
     header .overlay ul li a:hover {
-      text-decoration: underline; }
+      opacity: .6; }
 header .overlay ul li a:hover:after,
 header .overlay ul li a:focus:after,
 header .overlay ul li a:active:after {
@@ -149,22 +149,25 @@ header .overlay ul li a:after {
     opacity: 1;
     left: 0; } }
 main .container {
-  padding: 0 100px; }
+  /*padding: 0 100px;*/ }
 main .row h2 {
   font-family: 'MonkyBasic';
-  color: #fff; }
+  color: #fff;
+  margin-bottom: 30px; }
 main .row .desc {
-  font-size: 24px;
+  font-size: 20px;
                 /*
 font-style: italic;*/
   font-weight: 600;
   color: #fff; }
 main .row p:not(desc) {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   color: #fff; }
 main .slides {
   zoom: 1 !important; }
+  main .slides canvas {
+    transform: rotate(180deg); }
 main .navigate-left {
   content: '';
   background: url(/images/arrow_prev.png) no-repeat;

@@ -157,7 +157,7 @@ header{
         padding: 20px;
       }
       a:hover{
-        text-decoration: underline;
+        opacity: .6;
       }
     }
   }
@@ -190,25 +190,29 @@ header{
 }
 main{
   .container{
-    padding: 0 100px;
+    /*padding: 0 100px;*/
   }
   .row h2{
     font-family: 'MonkyBasic';
     color: #fff;
+    margin-bottom: 30px;
   }
   .row .desc{
-    font-size: 24px;/*
+    font-size: 20px;/*
     font-style: italic;*/
     font-weight: 600;
     color: #fff;
   }
   .row p:not(desc){
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     color: #fff;
   }
   .slides{
     zoom: 1!important;
+    canvas{
+      transform: rotate(180deg);
+    }
   }
   .navigate-left{
     content: '';
