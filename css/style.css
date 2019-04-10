@@ -302,11 +302,11 @@ footer {
   border-radius: 5px;
   position: relative;
   transition: all 2s linear;
-  display: flex;
 }
 
 .bar-1,
 .my-skills {
+  display: flex;
   width: 80%;
   margin: 10px auto 25px;
 }
