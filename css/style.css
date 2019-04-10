@@ -227,6 +227,32 @@ footer {
       background: #fff;
       color: #333; }
 
+    .socials {
+    padding: 20px 0; }
+    .socials li {
+      float: left;
+      padding: 0 7px; }
+    .socials li a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        font-size: 24px;
+        border: 1px solid #fff;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        position: relative; }
+      .socials li a i {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%); }
+      .socials li a:hover {
+          transition: background-color 0.5s ease;
+          background: #fff;
+          color: #0ccbcb; }
+
 /* ------ index page ------ */
 #index {
   font-family: 'MonkyBasic';
@@ -250,31 +276,7 @@ footer {
   #index .intro {
     font-size: 1.95vw;
     color: #393939; }
-  #index .socials {
-    padding: 20px 0; }
-    #index .socials li {
-      float: left;
-      padding: 0 7px; }
-      #index .socials li a {
-        display: block;
-        width: 50px;
-        height: 50px;
-        color: #fff;
-        font-size: 24px;
-        border: 1px solid #fff;
-        -moz-border-radius: 50px;
-        -webkit-border-radius: 50px;
-        border-radius: 50px;
-        position: relative; }
-        #index .socials li a i {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%); }
-        #index .socials li a:hover {
-          transition: background-color 0.5s ease;
-          background: #fff;
-          color: #0ccbcb; }
+  
 
 /* ------ about page ------ */
 #about img {
