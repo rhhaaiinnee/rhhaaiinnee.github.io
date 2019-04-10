@@ -292,6 +292,7 @@ footer {
   font-weight: bold;
   font-size: 20px;
   color: #db3a34;
+  width: 30%;
 }
 
 .bar {
@@ -301,6 +302,7 @@ footer {
   border-radius: 5px;
   position: relative;
   transition: all 2s linear;
+  display: flex;
 }
 
 .bar-1,
@@ -310,7 +312,8 @@ footer {
 }
 
 .bar-inner {
-  width: 0;
+  /*width: 0;*/
+  width: 70%;
   height: 35px;
   line-height: 35px;
   background: #db3a34;
