@@ -326,6 +326,7 @@ footer {
   right: 10px;
   top: 5px;
   font-size: 18px;
+  font-family: 'MonkyBasic';
 }
 /* ------ contact page ------ */
 @media screen and (max-height: 30.5em) {
